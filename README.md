@@ -28,35 +28,41 @@ STEP 0 - QUICK IDE ORIENTATION (optional but helpful):
 - Show me 3-4 keyboard shortcuts that will help me most as a researcher
 - If I'm new to this editor, offer to explain anything I'm confused about
 
-STEP 1 - CHECK NODE.JS:
-- Run `node --version` in the integrated terminal (Cmd+J on Mac, Ctrl+J on Windows)
+STEP 1 - HELP ME OPEN THE TERMINAL:
+- I might not know what "terminal" is or how to open it
+- Help me open the integrated terminal in this editor (it's usually a panel at the bottom)
+- If keyboard shortcuts don't work, show me how to find it in the menus
+- Wait for me to confirm I can see a panel with a blinking cursor
+
+STEP 2 - CHECK NODE.JS:
+- Help me type `node --version` in the terminal and run it
 - I need Node.js v18 or higher
 - If missing or outdated, give me the exact install command for my OS:
   - Mac: `brew install node@20` (or guide me to install Homebrew first if needed)
   - Windows: `winget install OpenJS.NodeJS.LTS` (or guide me to nodejs.org)
-  - Linux: Use nvm or package manager
+  - Linux: Use package manager or nvm
 
-STEP 2 - CHECK CLAUDE CODE:
-- Run `claude --version` in the terminal
+STEP 3 - CHECK CLAUDE CODE:
+- Help me type `claude --version` in the terminal
 - If missing, give me the install command:
   - Mac: `brew install anthropic/tap/claude-code`
   - Windows/Linux: `npm install -g @anthropic-ai/claude-code`
 
-STEP 3 - LAUNCH CLAUDE CODE:
+STEP 4 - LAUNCH CLAUDE CODE:
 - First, make sure I have a file open/selected in the editor (like this README)
 - Look for the Claude logo icon in the editor tab bar (top right area)
 - Click it to launch Claude Code in the sidebar
-- ALTERNATIVE: If no icon, run `claude` in the integrated terminal
+- ALTERNATIVE: If no icon, type `claude` in the terminal and press Enter
 - IMPORTANT: A browser window may open for authentication - I need to complete that login
 - Wait for me to confirm Claude Code is running before proceeding
 
-STEP 4 - INSTALL THE PLUGIN:
+STEP 5 - INSTALL THE PLUGIN:
 - Once Claude Code is running, I need to type THIS COMMAND INTO CLAUDE CODE (not the regular terminal):
   /plugin install linxule/interpretive-orchestration
-- Then run: /qual-check-setup (to verify installation)
+- Then type: /qual-check-setup (to verify installation)
 
-STEP 5 - START MY RESEARCH JOURNEY:
-- Run: /qual-init
+STEP 6 - START MY RESEARCH JOURNEY:
+- Type: /qual-init
 - This starts a "Socratic onboarding" dialogue that establishes my research philosophy
 
 Please guide me step by step. Wait for my confirmation at each step.
