@@ -10,13 +10,23 @@ A ready-to-use research environment for qualitative analysis with AI partnership
 
 ```
 I need help setting up a qualitative research environment in this workspace.
-Please act as a technical guide and walk me through each step one by one.
+Please act as my technical guide and walk me through each step one by one.
 
 CONTEXT:
 - I'm setting up "Interpretive Orchestration," a Claude Code plugin for qualitative research
 - This plugin helps with grounded theory, thematic analysis, and interpretive inquiry
 - It's NOT automation - it's a thinking partner that helps me reflect deeper
 - Plugin repo: https://github.com/linxule/interpretive-orchestration
+
+STEP 0 - QUICK IDE ORIENTATION (optional but helpful):
+- What editor am I using? (VS Code, Cursor, Windsurf, etc.)
+- Give me a 30-second tour of the interface:
+  - Where is the file explorer? (usually left sidebar)
+  - Where is the integrated terminal? (Cmd+J / Ctrl+J)
+  - Where is the AI chat panel? (where I'm talking to you now)
+  - Where are extensions? (Extensions icon in sidebar or Cmd+Shift+X)
+- Show me 3-4 keyboard shortcuts that will help me most as a researcher
+- If I'm new to this editor, offer to explain anything I'm confused about
 
 STEP 1 - CHECK NODE.JS:
 - Run `node --version` in the integrated terminal (Cmd+J on Mac, Ctrl+J on Windows)
@@ -111,6 +121,32 @@ A browser may open for authentication. Complete the login.
 2. **Open:** Double-click `starter.code-workspace` to open in VS Code/Cursor
 3. **Extensions:** Click "Install All" when prompted for recommended extensions
 4. **Setup:** Follow the AI-assisted setup above
+
+---
+
+## 🧭 New to Your Editor? Get a Personal Tour
+
+After setup is complete, use this prompt to learn your way around:
+
+```
+I'm a qualitative researcher new to this editor. Please give me a personalized tour.
+
+ABOUT ME:
+- I'll be working with text documents (interview transcripts, memos, field notes)
+- I need to write and organize markdown files
+- I'll be using Claude Code for AI-assisted analysis
+
+PLEASE SHOW ME:
+1. How to create, rename, and organize files and folders
+2. How to use split view to see two documents side by side
+3. How to search across all my files (find a quote I remember)
+4. How to use markdown preview (seeing formatted text)
+5. The most useful keyboard shortcuts for writing and navigation
+6. Any features specific to this editor (Cursor/Windsurf AI features, Copilot, etc.)
+7. How to customize the interface if I find something annoying
+
+Take your time. Show me one thing at a time and let me try it before moving on.
+```
 
 ---
 
