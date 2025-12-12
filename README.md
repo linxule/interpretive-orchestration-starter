@@ -4,115 +4,81 @@ A ready-to-use research environment for qualitative analysis with AI partnership
 
 ---
 
-## 🎯 Let Your AI Assistant Set Everything Up
+## 🤖 Let Your Editor's AI Set Everything Up
 
-**Copy this prompt into your AI assistant** (Copilot Chat, Cursor AI, Windsurf, etc.):
+Most modern editors have AI assistants built-in:
+- **VS Code** → Copilot Chat (click the chat icon in the sidebar, or `Cmd+Shift+I` / `Ctrl+Shift+I`)
+- **Cursor** → AI Chat (already open in sidebar)
+- **Windsurf** → Cascade (already open in sidebar)
+
+**Copy this prompt into your AI chat panel:**
 
 ```
-I need help setting up a qualitative research environment in this workspace.
-Please act as my technical guide and walk me through each step one by one.
+Help me set up "Interpretive Orchestration" - a Claude Code plugin for qualitative research.
 
 CONTEXT:
-- I'm setting up "Interpretive Orchestration," a Claude Code plugin for qualitative research
-- This plugin helps with grounded theory, thematic analysis, and interpretive inquiry
-- It's NOT automation - it's a thinking partner that helps me reflect deeper
 - Plugin repo: https://github.com/linxule/interpretive-orchestration
+- This helps with grounded theory, thematic analysis - it's a thinking partner, not automation
 
-STEP 0 - QUICK IDE ORIENTATION (optional but helpful):
-- What editor am I using? (VS Code, Cursor, Windsurf, etc.)
-- Give me a 30-second tour of the interface:
-  - Where is the file explorer? (usually left sidebar)
-  - Where is the integrated terminal? (Cmd+J / Ctrl+J)
-  - Where is the AI chat panel? (where I'm talking to you now)
-  - Where are extensions? (Extensions icon in sidebar or Cmd+Shift+X)
-- Show me 3-4 keyboard shortcuts that will help me most as a researcher
-- If I'm new to this editor, offer to explain anything I'm confused about
+SETUP STEPS:
+1. Open the terminal panel in this editor
+2. Check Node.js: run "node --version" - need v18+
+   - If missing: download from https://nodejs.org (click green LTS button), install, restart editor
+3. Check Claude Code: run "claude --version"
+   - If missing: run "npm install -g @anthropic-ai/claude-code"
+4. Start Claude Code: run "claude"
+   - A browser may open for login - complete the authentication
+5. INSIDE Claude Code (not regular terminal), run:
+   /plugin install linxule/interpretive-orchestration
+   /qual-check-setup
+6. Start research: /qual-init
 
-STEP 1 - HELP ME OPEN THE TERMINAL:
-- I might not know what "terminal" is or how to open it
-- Help me open the integrated terminal in this editor (it's usually a panel at the bottom)
-- If keyboard shortcuts don't work, show me how to find it in the menus
-- Wait for me to confirm I can see a panel with a blinking cursor
-
-STEP 2 - CHECK NODE.JS:
-- Help me type `node --version` in the terminal and run it
-- I need Node.js v18 or higher
-- If missing or outdated, give me the exact install command for my OS:
-  - Mac: `brew install node@20` (or guide me to install Homebrew first if needed)
-  - Windows: `winget install OpenJS.NodeJS.LTS` (or guide me to nodejs.org)
-  - Linux: Use package manager or nvm
-
-STEP 3 - CHECK CLAUDE CODE:
-- Help me type `claude --version` in the terminal
-- If missing, give me the install command:
-  - Mac: `brew install anthropic/tap/claude-code`
-  - Windows/Linux: `npm install -g @anthropic-ai/claude-code`
-
-STEP 4 - LAUNCH CLAUDE CODE:
-- First, make sure I have a file open/selected in the editor (like this README)
-- Look for the Claude logo icon in the editor tab bar (top right area)
-- Click it to launch Claude Code in the sidebar
-- ALTERNATIVE: If no icon, type `claude` in the terminal and press Enter
-- IMPORTANT: A browser window may open for authentication - I need to complete that login
-- Wait for me to confirm Claude Code is running before proceeding
-
-STEP 5 - INSTALL THE PLUGIN:
-- Once Claude Code is running, I need to type THIS COMMAND INTO CLAUDE CODE (not the regular terminal):
-  /plugin install linxule/interpretive-orchestration
-- Then type: /qual-check-setup (to verify installation)
-
-STEP 6 - START MY RESEARCH JOURNEY:
-- Type: /qual-init
-- This starts a "Socratic onboarding" dialogue that establishes my research philosophy
-
-Please guide me step by step. Wait for my confirmation at each step.
-If any step fails, stop and help me debug - don't assume it worked.
+Walk me through step by step. If anything fails, help me troubleshoot.
 ```
-
-That's it! Your AI assistant will walk you through everything without leaving VS Code.
 
 ---
 
-## 🛠️ Prefer Manual Setup?
+## 🛠️ Manual Setup
 
 <details>
-<summary>Click to expand step-by-step instructions</summary>
+<summary>Click here if you don't have an AI assistant, or prefer step-by-step instructions</summary>
 
-### Step 1: Check Prerequisites
+### What You Need
 
-Open terminal (`Cmd+J` on Mac, `Ctrl+J` on Windows):
+1. **Node.js** (v18 or higher) - Download from [nodejs.org](https://nodejs.org) (click the green LTS button)
+2. **Claude Code** - Install after Node.js is working
 
-```bash
-node --version    # Need v18+
-claude --version  # Need Claude Code CLI
+### Step-by-Step
+
+**1. Open the terminal in your editor**
+- Menu: View → Terminal
+- Or keyboard: `Cmd+J` (Mac) / `Ctrl+J` (Windows)
+
+**2. Check Node.js**
+```
+node --version
+```
+- Need v18+. If missing, download from [nodejs.org](https://nodejs.org), install, restart your editor.
+
+**3. Install Claude Code**
+```
+npm install -g @anthropic-ai/claude-code
 ```
 
-**If missing:**
-| Tool | Mac | Windows |
-|------|-----|---------|
-| Node.js | `brew install node@20` | `winget install OpenJS.NodeJS.LTS` |
-| Claude Code | `brew install anthropic/tap/claude-code` | `npm install -g @anthropic-ai/claude-code` |
-
-### Step 2: Launch Claude Code
-
-**Option A (GUI):** Open any file → Click Claude logo in tab bar (top right)
-
-**Option B (Terminal):**
-```bash
+**4. Start Claude Code**
+```
 claude
 ```
+- A browser may open for login. Complete it.
+- Your terminal prompt will change - you're now inside Claude Code.
 
-A browser may open for authentication. Complete the login.
-
-### Step 3: Install Plugin (inside Claude Code)
-
+**5. Install the plugin** (type these INTO Claude Code)
 ```
 /plugin install linxule/interpretive-orchestration
 /qual-check-setup
 ```
 
-### Step 4: Initialize Project
-
+**6. Start your research**
 ```
 /qual-init
 ```
@@ -123,64 +89,45 @@ A browser may open for authentication. Complete the login.
 
 ## 📥 Viewing This on GitHub?
 
-1. **Download:** Click green "Code" button → "Download ZIP" (or `git clone`)
-2. **Open:** Double-click `starter.code-workspace` to open in VS Code/Cursor
-3. **Extensions:** Click "Install All" when prompted for recommended extensions
-4. **Setup:** Follow the AI-assisted setup above
+1. **Download:** Click green "Code" button → "Download ZIP"
+2. **Unzip** the downloaded file
+3. **Install an editor** if you don't have one: [Cursor](https://cursor.sh) (recommended - has AI built-in) or [VS Code](https://code.visualstudio.com)
+4. **Open the folder** in your editor (File → Open Folder)
+5. **Follow the setup above**
 
 ---
 
-## 🧭 New to Your Editor? Get a Personal Tour
+## 🧭 New to Your Editor?
 
-After setup is complete, use this prompt to learn your way around:
+After setup, ask your AI assistant:
 
 ```
-I'm a qualitative researcher new to this editor. Please give me a personalized tour.
+I'm a qualitative researcher new to this editor. Give me a quick tour.
 
-ABOUT ME:
-- I'll be working with text documents (interview transcripts, memos, field notes)
-- I need to write and organize markdown files
-- I'll be using Claude Code for AI-assisted analysis
+Show me:
+1. How to create and organize files
+2. How to see two documents side by side
+3. How to search across all my files
+4. The 3 most useful keyboard shortcuts for writing
 
-PLEASE SHOW ME:
-1. How to create, rename, and organize files and folders
-2. How to use split view to see two documents side by side
-3. How to search across all my files (find a quote I remember)
-4. How to use markdown preview (seeing formatted text)
-5. The most useful keyboard shortcuts for writing and navigation
-6. Any features specific to this editor (Cursor/Windsurf AI features, Copilot, etc.)
-7. How to customize the interface if I find something annoying
-
-Take your time. Show me one thing at a time and let me try it before moving on.
+Take it slow - let me try each thing before moving on.
 ```
-
----
-
-## What's Pre-Configured
-
-- Clean interface (no minimap, minimal distractions)
-- Auto-save every 5 seconds
-- Large fonts for readability
-- Light theme for long sessions
-- Recommended extensions (including Claude Code)
-
-Customize in [SETUP.md](SETUP.md).
 
 ---
 
 ## What This Plugin Does
 
-**Interpretive Orchestration** is NOT a coding automation tool. It's an **epistemic partnership system** for qualitative researchers.
+**Interpretive Orchestration** helps qualitative researchers think deeper - it's NOT automation.
 
 | What It's NOT | What It IS |
 |---------------|------------|
-| Auto-coder that replaces your thinking | Thinking partner that deepens reflection |
+| Auto-coder that replaces your thinking | Thinking partner that asks good questions |
 | Speed tool for faster analysis | Depth tool for richer interpretation |
-| Black-box AI that gives answers | Transparent dialogue that asks questions |
+| Black box that gives answers | Transparent dialogue that shows reasoning |
 
 **The methodology:**
-1. **Stage 1** - You code 10-15 documents manually (builds theoretical sensitivity)
-2. **Stage 2** - Human-AI collaboration with visible reasoning
+1. **Stage 1** - You code 10-15 documents manually (builds your intuition)
+2. **Stage 2** - You + AI collaborate with visible reasoning
 3. **Stage 3** - You synthesize theory (AI asks tradition's questions)
 
 ---
@@ -189,8 +136,8 @@ Customize in [SETUP.md](SETUP.md).
 
 | Resource | Description |
 |----------|-------------|
-| [Main Plugin](https://github.com/linxule/interpretive-orchestration) | Full documentation & philosophy |
-| [SETUP.md](SETUP.md) | Customize theme, fonts, shortcuts |
+| [Main Plugin](https://github.com/linxule/interpretive-orchestration) | Full documentation |
+| [SETUP.md](SETUP.md) | Customize theme, fonts |
 | [Troubleshooting](https://github.com/linxule/interpretive-orchestration/blob/main/TROUBLESHOOTING.md) | Common issues |
 
 ---

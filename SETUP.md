@@ -52,12 +52,11 @@ Before starting:
 
 ### How to Install Node.js
 
-| System | Command |
-|--------|---------|
-| **Mac** (with Homebrew) | `brew install node@20` |
-| **Mac** (without Homebrew) | Download from [nodejs.org](https://nodejs.org/) |
-| **Windows** | `winget install OpenJS.NodeJS.LTS` or download from [nodejs.org](https://nodejs.org/) |
-| **Linux** | Use your package manager or [nodejs.org](https://nodejs.org/) |
+**All systems:** Download from [nodejs.org](https://nodejs.org/)
+1. Click the big green **LTS** button
+2. Run the downloaded installer
+3. Click "Next" through the prompts
+4. **Restart your editor** after installing
 
 ### How to Check If You Have Claude Code
 
@@ -71,11 +70,11 @@ Before starting:
 
 ### How to Install Claude Code
 
-| System | Command |
-|--------|---------|
-| **Mac** | `brew install anthropic/tap/claude-code` |
-| **Windows** | `npm install -g @anthropic-ai/claude-code` |
-| **Linux** | `npm install -g @anthropic-ai/claude-code` |
+**All systems:** In your terminal, type:
+```
+npm install -g @anthropic-ai/claude-code
+```
+Press Enter and wait for it to finish.
 
 ---
 
