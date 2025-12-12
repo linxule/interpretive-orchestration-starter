@@ -37,30 +37,11 @@ If you need to use terminal before opening your editor:
 
 Before starting:
 - [ ] VS Code, Cursor, or similar editor installed
-- [ ] Node.js 18+ installed
 - [ ] Claude Code installed
-
-### How to Check If You Have Node.js
-
-1. Open terminal (see above)
-2. Type: `node --version`
-3. Press Enter
-
-**If you see** `v18.x.x` or `v20.x.x` or higher → You're good!
-
-**If you see** "command not found" or a lower version → You need to install Node.js
-
-### How to Install Node.js
-
-**All systems:** Download from [nodejs.org](https://nodejs.org/)
-1. Click the big green **LTS** button
-2. Run the downloaded installer
-3. Click "Next" through the prompts
-4. **Restart your editor** after installing
 
 ### How to Check If You Have Claude Code
 
-1. Open terminal
+1. Open terminal (see above)
 2. Type: `claude --version`
 3. Press Enter
 
@@ -70,17 +51,27 @@ Before starting:
 
 ### How to Install Claude Code
 
-**All systems:** In your terminal, type:
+**Mac/Linux:** In your terminal, run:
 ```
-npm install -g @anthropic-ai/claude-code
+curl -fsSL https://claude.ai/install.sh | bash
 ```
-Press Enter and wait for it to finish.
+
+**Windows PowerShell:** Run:
+```
+irm https://claude.ai/install.ps1 | iex
+```
+
+After installing, **close and reopen** your terminal panel, then verify with `claude --version`.
+
+See [official docs](https://code.claude.com/docs/en/setup) for more options.
 
 ---
 
-## Installing the Plugin
+## Installing the Interpretive Orchestration Plugin
 
-Once you have Node.js and Claude Code:
+The plugin ([github.com/linxule/interpretive-orchestration](https://github.com/linxule/interpretive-orchestration)) is what provides the qualitative research tools. This starter repo is just the pre-configured workspace.
+
+Once Claude Code is installed:
 
 1. Open terminal in your editor (`Cmd+J` / `Ctrl+J`)
 2. Type `claude` and press Enter

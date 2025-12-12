@@ -21,19 +21,21 @@ CONTEXT:
 - This helps with grounded theory, thematic analysis - it's a thinking partner, not automation
 
 SETUP STEPS:
-1. Open the terminal panel in this editor
-2. Check Node.js: run "node --version" - need v18+
-   - If missing: download from https://nodejs.org (click green LTS button), install, restart editor
-3. Check Claude Code: run "claude --version"
-   - If missing: run "npm install -g @anthropic-ai/claude-code"
-4. Start Claude Code: run "claude"
+1. Open the terminal panel in this editor (help me find it if needed)
+2. Check Claude Code: run "claude --version"
+   - If missing, install it:
+     - Mac/Linux: curl -fsSL https://claude.ai/install.sh | bash
+     - Windows PowerShell: irm https://claude.ai/install.ps1 | iex
+   - After install, restart the terminal panel
+3. Start Claude Code: run "claude"
    - A browser may open for login - complete the authentication
-5. INSIDE Claude Code (not regular terminal), run:
+4. INSIDE Claude Code (not regular terminal), run:
    /plugin install linxule/interpretive-orchestration
    /qual-check-setup
-6. Start research: /qual-init
+5. Start research: /qual-init
 
 Walk me through step by step. If anything fails, help me troubleshoot.
+Once setup is complete, give me a quick tour of this editor's features.
 ```
 
 ---
@@ -94,24 +96,6 @@ claude
 3. **Install an editor** if you don't have one: [Cursor](https://cursor.sh) (recommended - has AI built-in) or [VS Code](https://code.visualstudio.com)
 4. **Open the folder** in your editor (File → Open Folder)
 5. **Follow the setup above**
-
----
-
-## 🧭 New to Your Editor?
-
-After setup, ask your AI assistant:
-
-```
-I'm a qualitative researcher new to this editor. Give me a quick tour.
-
-Show me:
-1. How to create and organize files
-2. How to see two documents side by side
-3. How to search across all my files
-4. The 3 most useful keyboard shortcuts for writing
-
-Take it slow - let me try each thing before moving on.
-```
 
 ---
 
