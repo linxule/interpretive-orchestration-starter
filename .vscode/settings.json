@@ -1,0 +1,26 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.6,
+  "editor.renderWhitespace": "none",
+  "editor.glyphMargin": false,
+  "breadcrumbs.enabled": true,
+  "workbench.activityBar.location": "top",
+  "workbench.startupEditor": "readme",
+  "workbench.tips.enabled": false,
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "scm.diffDecorations": "none",
+  "git.decorations.enabled": false,
+  "git.autofetch": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "markdown.preview.fontSize": 15,
+  "markdown.preview.lineHeight": 1.6
+}

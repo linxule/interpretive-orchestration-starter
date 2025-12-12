@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+
+# Project data (keep private)
+data/*
+!data/.gitkeep
+
+# Interpretive Orchestration generated
+.interpretive-orchestration/
+stage1-foundation/
+stage2-collaboration/
+stage3-synthesis/
+outputs/
+
+# IDE (user-specific, not workspace)
+*.code-workspace.backup
+
+# Private maintenance notes
+_MAINTENANCE.md

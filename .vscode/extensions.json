@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    "streetsidesoftware.code-spell-checker",
+    "pkief.material-icon-theme",
+    "mechatroner.rainbow-csv"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.cpptools",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens"
+  ]
+}
